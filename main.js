@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 const cors = require('cors');
 const hubspot = require('@hubspot/api-client')
-const hubspotClient = new hubspot.Client({ "accessToken": 'pat-na1-4fd9314a-f632-4b8a-b65f-b115529c91a6' })
+const hubspotClient = new hubspot.Client({ "accessToken": 'pat-na1-1c30f18f-2e97-440a-85c4-a889ce4befc3' })
 app.use(express.json());
 app.use(cors({
   origin: '*'
