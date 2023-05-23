@@ -11,7 +11,7 @@ app.use(cors({
 app.get('/meetings', async function (req, res) {
   const limit = 6;
   const after = req && req.query.after ? req.query.after : undefined;
-  const properties = ['hs_meeting_body', 'hs_meeting_title', 'hs_body_preview_html','hubspot_owner_id'];
+  const properties = ['hs_meeting_body', 'hs_meeting_title', 'hs_body_preview_html','hubspot_owner_id','hs_meeting_start_time'];
   const propertiesWithHistory = undefined;
   const associations = undefined;
   const archived = false;
